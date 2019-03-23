@@ -29,7 +29,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@^7.1.6":
+"@babel/core@^7.1.0", "@babel/core@^7.1.6":
   version "7.4.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@babel/core/-/core-7.4.0.tgz#248fd6874b7d755010bfe61f557461d4f446d9e9"
   integrity sha1-JI/Wh0t9dVAQv+YfVXRh1PRG2ek=
@@ -49,7 +49,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/generator@^7.2.2", "@babel/generator@^7.4.0":
+"@babel/generator@^7.0.0", "@babel/generator@^7.2.2", "@babel/generator@^7.4.0":
   version "7.4.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@babel/generator/-/generator-7.4.0.tgz#c230e79589ae7a729fd4631b9ded4dc220418196"
   integrity sha1-wjDnlYmuenKf1GMbne1NwiBBgZY=
@@ -823,7 +823,14 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@babel/template@^7.1.0", "@babel/template@^7.2.2", "@babel/template@^7.4.0":
+"@babel/runtime@^7.1.2":
+  version "7.4.2"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@babel/runtime/-/runtime-7.4.2.tgz#f5ab6897320f16decd855eed70b705908a313fe8"
+  integrity sha1-9atolzIPFt7NhV7tcLcFkIoxP+g=
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
+"@babel/template@^7.0.0", "@babel/template@^7.1.0", "@babel/template@^7.2.2", "@babel/template@^7.4.0":
   version "7.4.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@babel/template/-/template-7.4.0.tgz#12474e9c077bae585c5d835a95c0b0b790c25c8b"
   integrity sha1-EkdOnAd7rlhcXYNalcCwt5DCXIs=
@@ -856,10 +863,96 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@cnakazawa/watch@^1.0.3":
+  version "1.0.3"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@cnakazawa/watch/-/watch-1.0.3.tgz#099139eaec7ebf07a27c1786a3ff64f39464d2ef"
+  integrity sha1-CZE56ux+vweifBeGo/9k85Rk0u8=
+  dependencies:
+    exec-sh "^0.3.2"
+    minimist "^1.2.0"
+
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha1-rUldxBsS511YjG24uYNPCPoTHrc=
+
+"@jest/console@^24.3.0":
+  version "24.3.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@jest/console/-/console-24.3.0.tgz#7bd920d250988ba0bf1352c4493a48e1cb97671e"
+  integrity sha1-e9kg0lCYi6C/E1LESTpI4cuXZx4=
+  dependencies:
+    "@jest/source-map" "^24.3.0"
+    "@types/node" "*"
+    chalk "^2.0.1"
+    slash "^2.0.0"
+
+"@jest/environment@^24.5.0":
+  version "24.5.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@jest/environment/-/environment-24.5.0.tgz#a2557f7808767abea3f9e4cc43a172122a63aca8"
+  integrity sha1-olV/eAh2er6j+eTMQ6FyEipjrKg=
+  dependencies:
+    "@jest/fake-timers" "^24.5.0"
+    "@jest/transform" "^24.5.0"
+    "@jest/types" "^24.5.0"
+    "@types/node" "*"
+    jest-mock "^24.5.0"
+
+"@jest/fake-timers@^24.5.0":
+  version "24.5.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@jest/fake-timers/-/fake-timers-24.5.0.tgz#4a29678b91fd0876144a58f8d46e6c62de0266f0"
+  integrity sha1-Silni5H9CHYUSlj41G5sYt4CZvA=
+  dependencies:
+    "@jest/types" "^24.5.0"
+    "@types/node" "*"
+    jest-message-util "^24.5.0"
+    jest-mock "^24.5.0"
+
+"@jest/source-map@^24.3.0":
+  version "24.3.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@jest/source-map/-/source-map-24.3.0.tgz#563be3aa4d224caf65ff77edc95cd1ca4da67f28"
+  integrity sha1-Vjvjqk0iTK9l/3ftyVzRyk2mfyg=
+  dependencies:
+    callsites "^3.0.0"
+    graceful-fs "^4.1.15"
+    source-map "^0.6.0"
+
+"@jest/test-result@^24.5.0":
+  version "24.5.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@jest/test-result/-/test-result-24.5.0.tgz#ab66fb7741a04af3363443084e72ea84861a53f2"
+  integrity sha1-q2b7d0GgSvM2NEMITnLqhIYaU/I=
+  dependencies:
+    "@jest/console" "^24.3.0"
+    "@jest/types" "^24.5.0"
+    "@types/istanbul-lib-coverage" "^1.1.0"
+
+"@jest/transform@^24.5.0":
+  version "24.5.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@jest/transform/-/transform-24.5.0.tgz#6709fc26db918e6af63a985f2cc3c464b4cf99d9"
+  integrity sha1-Zwn8JtuRjmr2OphfLMPEZLTPmdk=
+  dependencies:
+    "@babel/core" "^7.1.0"
+    "@jest/types" "^24.5.0"
+    babel-plugin-istanbul "^5.1.0"
+    chalk "^2.0.1"
+    convert-source-map "^1.4.0"
+    fast-json-stable-stringify "^2.0.0"
+    graceful-fs "^4.1.15"
+    jest-haste-map "^24.5.0"
+    jest-regex-util "^24.3.0"
+    jest-util "^24.5.0"
+    micromatch "^3.1.10"
+    realpath-native "^1.1.0"
+    slash "^2.0.0"
+    source-map "^0.6.1"
+    write-file-atomic "2.4.1"
+
+"@jest/types@^24.5.0":
+  version "24.5.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@jest/types/-/types-24.5.0.tgz#feee214a4d0167b0ca447284e95a57aa10b3ee95"
+  integrity sha1-/u4hSk0BZ7DKRHKE6VpXqhCz7pU=
+  dependencies:
+    "@types/istanbul-lib-coverage" "^1.1.0"
+    "@types/yargs" "^12.0.9"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -979,6 +1072,11 @@
     "@svgr/plugin-svgo" "^4.0.3"
     loader-utils "^1.1.0"
 
+"@types/istanbul-lib-coverage@^1.1.0":
+  version "1.1.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-1.1.0.tgz#2cc2ca41051498382b43157c8227fea60363f94a"
+  integrity sha1-LMLKQQUUmDgrQxV8gif+pgNj+Uo=
+
 "@types/node@*":
   version "11.11.6"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@types/node/-/node-11.11.6.tgz#df929d1bb2eee5afdda598a41930fe50b43eaa6a"
@@ -988,6 +1086,11 @@
   version "1.5.2"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
   integrity sha1-aQoUdbhPKohP0HzXl8APXzE1bqg=
+
+"@types/stack-utils@^1.0.1":
+  version "1.0.1"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
+  integrity sha1-CoUdO9lkmPolwzq3J47TvWXwbD4=
 
 "@types/tapable@1.0.2":
   version "1.0.2"
@@ -1015,6 +1118,11 @@
     "@types/node" "*"
     "@types/unist" "*"
     "@types/vfile-message" "*"
+
+"@types/yargs@^12.0.9":
+  version "12.0.10"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/@types/yargs/-/yargs-12.0.10.tgz#17a8ec65cd8e88f51b418ceb271af18d3137df67"
+  integrity sha1-F6jsZc2OiPUbQYzrJxrxjTE332c=
 
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
@@ -1364,6 +1472,11 @@ array-equal@^1.0.0:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/array-equal/-/array-equal-1.0.0.tgz#8c2a5ef2472fd9ea742b04c77a75093ba2757c93"
   integrity sha1-jCpe8kcv2ep0KwTHenUJO6J1fJM=
 
+array-filter@^1.0.0:
+  version "1.0.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/array-filter/-/array-filter-1.0.0.tgz#baf79e62e6ef4c2a4c0b831232daffec251f9d83"
+  integrity sha1-uveeYubvTCpMC4MSMtr/7CUfnYM=
+
 array-filter@~0.0.0:
   version "0.0.1"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/array-filter/-/array-filter-0.0.1.tgz#7da8cf2e26628ed732803581fd21f67cacd2eeec"
@@ -1419,12 +1532,21 @@ array-unique@^0.3.2:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
   integrity sha1-qJS3XUvE9s1nnvMkSp/Y9Gri1Cg=
 
+array.prototype.flat@^1.2.1:
+  version "1.2.1"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/array.prototype.flat/-/array.prototype.flat-1.2.1.tgz#812db8f02cad24d3fab65dd67eabe3b8903494a4"
+  integrity sha1-gS248CytJNP6tl3WfqvjuJA0lKQ=
+  dependencies:
+    define-properties "^1.1.2"
+    es-abstract "^1.10.0"
+    function-bind "^1.1.1"
+
 arrify@^1.0.1:
   version "1.0.1"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
 
-asap@~2.0.6:
+asap@~2.0.3, asap@~2.0.6:
   version "2.0.6"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
   integrity sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=
@@ -1654,6 +1776,15 @@ babel-plugin-istanbul@^4.1.6:
     find-up "^2.1.0"
     istanbul-lib-instrument "^1.10.1"
     test-exclude "^4.2.1"
+
+babel-plugin-istanbul@^5.1.0:
+  version "5.1.1"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/babel-plugin-istanbul/-/babel-plugin-istanbul-5.1.1.tgz#7981590f1956d75d67630ba46f0c22493588c893"
+  integrity sha1-eYFZDxlW111nYwukbwwiSTWIyJM=
+  dependencies:
+    find-up "^3.0.0"
+    istanbul-lib-instrument "^3.0.0"
+    test-exclude "^5.0.0"
 
 babel-plugin-jest-hoist@^23.2.0:
   version "23.2.0"
@@ -2161,6 +2292,13 @@ capture-exit@^1.2.0:
   dependencies:
     rsvp "^3.3.3"
 
+capture-exit@^2.0.0:
+  version "2.0.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/capture-exit/-/capture-exit-2.0.0.tgz#fb953bfaebeb781f62898239dabb426d08a509a4"
+  integrity sha1-+5U7+uvreB9iiYI52rtCbQilCaQ=
+  dependencies:
+    rsvp "^4.8.4"
+
 case-sensitive-paths-webpack-plugin@2.2.0:
   version "2.2.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/case-sensitive-paths-webpack-plugin/-/case-sensitive-paths-webpack-plugin-2.2.0.tgz#3371ef6365ef9c25fa4b81c16ace0e9c7dc58c3e"
@@ -2206,6 +2344,18 @@ check-types@^7.3.0:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/check-types/-/check-types-7.4.0.tgz#0378ec1b9616ec71f774931a3c6516fad8c152f4"
   integrity sha1-A3jsG5YW7HH3dJMaPGUW+tjBUvQ=
 
+cheerio@^1.0.0-rc.2:
+  version "1.0.0-rc.2"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/cheerio/-/cheerio-1.0.0-rc.2.tgz#4b9f53a81b27e4d5dac31c0ffd0cfa03cc6830db"
+  integrity sha1-S59TqBsn5NXawxwP/Qz6A8xoMNs=
+  dependencies:
+    css-select "~1.2.0"
+    dom-serializer "~0.1.0"
+    entities "~1.1.1"
+    htmlparser2 "^3.9.1"
+    lodash "^4.15.0"
+    parse5 "^3.0.1"
+
 chokidar@^2.0.0, chokidar@^2.0.2, chokidar@^2.0.4:
   version "2.1.5"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/chokidar/-/chokidar-2.1.5.tgz#0ae8434d962281a5f56c72869e79cb6d9d86ad4d"
@@ -2242,6 +2392,11 @@ ci-info@^1.5.0:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/ci-info/-/ci-info-1.6.0.tgz#2ca20dbb9ceb32d4524a683303313f0304b1e497"
   integrity sha1-LKINu5zrMtRSSmgzAzE/AwSx5Jc=
 
+ci-info@^2.0.0:
+  version "2.0.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"
+  integrity sha1-Z6npZL4xpR4V5QENWObxKDQAL0Y=
+
 cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   version "1.0.4"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/cipher-base/-/cipher-base-1.0.4.tgz#8760e4ecc272f4c363532f926d874aae2c1397de"
@@ -2249,6 +2404,11 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   dependencies:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
+
+circular-json-es6@^2.0.1:
+  version "2.0.2"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/circular-json-es6/-/circular-json-es6-2.0.2.tgz#e4f4a093e49fb4b6aba1157365746112a78bd344"
+  integrity sha1-5PSgk+SftLaroRVzZXRhEqeL00Q=
 
 circular-json@^0.3.1:
   version "0.3.3"
@@ -2549,6 +2709,11 @@ core-js@3.0.0:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/core-js/-/core-js-3.0.0.tgz#a8dbfa978d29bfc263bfb66c556d0ca924c28957"
   integrity sha1-qNv6l40pv8Jjv7ZsVW0MqSTCiVc=
 
+core-js@^1.0.0:
+  version "1.2.7"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
+  integrity sha1-ZSKUwUZR2yj6k70tX/KYOk8IxjY=
+
 core-js@^2.4.0, core-js@^2.5.0:
   version "2.6.5"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/core-js/-/core-js-2.6.5.tgz#44bc8d249e7fb2ff5d00e0341a7ffb94fbf67895"
@@ -2610,6 +2775,14 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     ripemd160 "^2.0.0"
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
+
+create-react-context@^0.2.2:
+  version "0.2.3"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/create-react-context/-/create-react-context-0.2.3.tgz#9ec140a6914a22ef04b8b09b7771de89567cb6f3"
+  integrity sha1-nsFAppFKIu8EuLCbd3HeiVZ8tvM=
+  dependencies:
+    fbjs "^0.8.0"
+    gud "^1.0.0"
 
 cross-spawn@6.0.5, cross-spawn@^6.0.0, cross-spawn@^6.0.5:
   version "6.0.5"
@@ -2706,7 +2879,7 @@ css-select-base-adapter@^0.1.1:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/css-select-base-adapter/-/css-select-base-adapter-0.1.1.tgz#3b2ff4972cc362ab88561507a95408a1432135d7"
   integrity sha1-Oy/0lyzDYquIVhUHqVQIoUMhNdc=
 
-css-select@^1.1.0:
+css-select@^1.1.0, css-select@~1.2.0:
   version "1.2.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/css-select/-/css-select-1.2.0.tgz#2b3a110539c5355f1cd8d314623e870b121ec858"
   integrity sha1-KzoRBTnFNV8c2NMUYj6HCxIeyFg=
@@ -2937,6 +3110,13 @@ decode-uri-component@^0.2.0:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
 
+deep-equal-ident@^1.1.1:
+  version "1.1.1"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/deep-equal-ident/-/deep-equal-ident-1.1.1.tgz#06f4b89e53710cd6cea4a7781c7a956642de8dc9"
+  integrity sha1-BvS4nlNxDNbOpKd4HHqVZkLejck=
+  dependencies:
+    lodash.isequal "^3.0"
+
 deep-equal@^1.0.1:
   version "1.0.1"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/deep-equal/-/deep-equal-1.0.1.tgz#f5d260292b660e084eff4cdbc9f08ad3247448b5"
@@ -3088,6 +3268,11 @@ dir-glob@2.0.0:
     arrify "^1.0.1"
     path-type "^3.0.0"
 
+discontinuous-range@1.0.0:
+  version "1.0.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/discontinuous-range/-/discontinuous-range-1.0.0.tgz#e38331f0844bba49b9a9cb71c771585aab1bc65a"
+  integrity sha1-44Mx8IRLukm5qctxx3FYWqsbxlo=
+
 dns-equal@^1.0.0:
   version "1.0.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/dns-equal/-/dns-equal-1.0.0.tgz#b39e7f1da6eb0a75ba9c17324b34753c47e0654d"
@@ -3130,7 +3315,7 @@ dom-converter@^0.2:
   dependencies:
     utila "~0.4"
 
-dom-serializer@0:
+dom-serializer@0, dom-serializer@~0.1.0:
   version "0.1.1"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/dom-serializer/-/dom-serializer-0.1.1.tgz#1ec4059e284babed36eec2941d4a970a189ce7c0"
   integrity sha1-HsQFnihLq+027sKUHUqXChic58A=
@@ -3261,6 +3446,13 @@ encodeurl@~1.0.2:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
   integrity sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
 
+encoding@^0.1.11:
+  version "0.1.12"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/encoding/-/encoding-0.1.12.tgz#538b66f3ee62cd1ab51ec323829d1f9480c74beb"
+  integrity sha1-U4tm8+5izRq1HsMjgp0flIDHS+s=
+  dependencies:
+    iconv-lite "~0.4.13"
+
 end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   version "1.4.1"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/end-of-stream/-/end-of-stream-1.4.1.tgz#ed29634d19baba463b6ce6b80a37213eab71ec43"
@@ -3277,10 +3469,76 @@ enhanced-resolve@^4.1.0:
     memory-fs "^0.4.0"
     tapable "^1.0.0"
 
-entities@^1.1.1:
+entities@^1.1.1, entities@~1.1.1:
   version "1.1.2"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/entities/-/entities-1.1.2.tgz#bdfa735299664dfafd34529ed4f8522a275fea56"
   integrity sha1-vfpzUplmTfr9NFKe1PhSKidf6lY=
+
+enzyme-adapter-react-16@^1.11.2:
+  version "1.11.2"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/enzyme-adapter-react-16/-/enzyme-adapter-react-16-1.11.2.tgz#8efeafb27e96873a5492fdef3f423693182eb9d4"
+  integrity sha1-jv6vsn6WhzpUkv3vP0I2kxguudQ=
+  dependencies:
+    enzyme-adapter-utils "^1.10.1"
+    object.assign "^4.1.0"
+    object.values "^1.1.0"
+    prop-types "^15.7.2"
+    react-is "^16.8.4"
+    react-test-renderer "^16.0.0-0"
+    semver "^5.6.0"
+
+enzyme-adapter-utils@^1.10.1:
+  version "1.10.1"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/enzyme-adapter-utils/-/enzyme-adapter-utils-1.10.1.tgz#58264efa19a7befdbf964fb7981a108a5452ac96"
+  integrity sha1-WCZO+hmnvv2/lk+3mBoQilRSrJY=
+  dependencies:
+    function.prototype.name "^1.1.0"
+    object.assign "^4.1.0"
+    object.fromentries "^2.0.0"
+    prop-types "^15.7.2"
+    semver "^5.6.0"
+
+enzyme-matchers@^7.0.2:
+  version "7.0.2"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/enzyme-matchers/-/enzyme-matchers-7.0.2.tgz#fe47f2cb54f8b0c5a3f0e515faf8131c188f613a"
+  integrity sha1-/kfyy1T4sMWj8OUV+vgTHBiPYTo=
+  dependencies:
+    circular-json-es6 "^2.0.1"
+    deep-equal-ident "^1.1.1"
+
+enzyme-to-json@^3.3.0:
+  version "3.3.5"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/enzyme-to-json/-/enzyme-to-json-3.3.5.tgz#f8eb82bd3d5941c9d8bc6fd9140030777d17d0af"
+  integrity sha1-+OuCvT1ZQcnYvG/ZFAAwd30X0K8=
+  dependencies:
+    lodash "^4.17.4"
+
+enzyme@^3.9.0:
+  version "3.9.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/enzyme/-/enzyme-3.9.0.tgz#2b491f06ca966eb56b6510068c7894a7e0be3909"
+  integrity sha1-K0kfBsqWbrVrZRAGjHiUp+C+OQk=
+  dependencies:
+    array.prototype.flat "^1.2.1"
+    cheerio "^1.0.0-rc.2"
+    function.prototype.name "^1.1.0"
+    has "^1.0.3"
+    html-element-map "^1.0.0"
+    is-boolean-object "^1.0.0"
+    is-callable "^1.1.4"
+    is-number-object "^1.0.3"
+    is-regex "^1.0.4"
+    is-string "^1.0.4"
+    is-subset "^0.1.1"
+    lodash.escape "^4.0.1"
+    lodash.isequal "^4.5.0"
+    object-inspect "^1.6.0"
+    object-is "^1.0.1"
+    object.assign "^4.1.0"
+    object.entries "^1.0.4"
+    object.values "^1.0.4"
+    raf "^3.4.0"
+    rst-selector-parser "^2.2.3"
+    string.prototype.trim "^1.1.2"
 
 errno@^0.1.3, errno@~0.1.7:
   version "0.1.7"
@@ -3296,7 +3554,7 @@ error-ex@^1.2.0, error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
-es-abstract@^1.11.0, es-abstract@^1.12.0, es-abstract@^1.5.1, es-abstract@^1.7.0:
+es-abstract@^1.10.0, es-abstract@^1.11.0, es-abstract@^1.12.0, es-abstract@^1.5.0, es-abstract@^1.5.1, es-abstract@^1.7.0:
   version "1.13.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/es-abstract/-/es-abstract-1.13.0.tgz#ac86145fdd5099d8dd49558ccba2eaf9b88e24e9"
   integrity sha1-rIYUX91QmdjdSVWMy6Lq+biOJOk=
@@ -3572,6 +3830,11 @@ exec-sh@^0.2.0:
   dependencies:
     merge "^1.2.0"
 
+exec-sh@^0.3.2:
+  version "0.3.2"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/exec-sh/-/exec-sh-0.3.2.tgz#6738de2eb7c8e671d0366aea0b0db8c6f7d7391b"
+  integrity sha1-ZzjeLrfI5nHQNmrqCw24xvfXORs=
+
 execa@^0.10.0:
   version "0.10.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/execa/-/execa-0.10.0.tgz#ff456a8f53f90f8eccc71a96d11bdfc7f082cb50"
@@ -3803,6 +4066,19 @@ fb-watchman@^2.0.0:
   integrity sha1-VOmr99+i8mzZsWNsWIwa/AXeXVg=
   dependencies:
     bser "^2.0.0"
+
+fbjs@^0.8.0:
+  version "0.8.17"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
+  integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
+  dependencies:
+    core-js "^1.0.0"
+    isomorphic-fetch "^2.1.1"
+    loose-envify "^1.0.0"
+    object-assign "^4.1.0"
+    promise "^7.1.1"
+    setimmediate "^1.0.5"
+    ua-parser-js "^0.7.18"
 
 figgy-pudding@^3.5.1:
   version "3.5.1"
@@ -4086,10 +4362,19 @@ fsevents@^1.2.3, fsevents@^1.2.7:
     nan "^2.9.2"
     node-pre-gyp "^0.10.0"
 
-function-bind@^1.1.1:
+function-bind@^1.0.2, function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha1-pWiZ0+o8m6uHS7l3O3xe3pL0iV0=
+
+function.prototype.name@^1.1.0:
+  version "1.1.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/function.prototype.name/-/function.prototype.name-1.1.0.tgz#8bd763cc0af860a859cc5d49384d74b932cd2327"
+  integrity sha1-i9djzAr4YKhZzF1JOE10uTLNIyc=
+  dependencies:
+    define-properties "^1.1.2"
+    function-bind "^1.1.1"
+    is-callable "^1.1.3"
 
 functional-red-black-tree@^1.0.1:
   version "1.0.1"
@@ -4243,6 +4528,11 @@ growly@^1.3.0:
   version "1.3.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
   integrity sha1-8QdIy+dq+WS3yWyTxrzCivEgwIE=
+
+gud@^1.0.0:
+  version "1.0.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/gud/-/gud-1.0.0.tgz#a489581b17e6a70beca9abe3ae57de7a499852c0"
+  integrity sha1-pIlYGxfmpwvsqavjrlfeekmYUsA=
 
 gzip-size@5.0.0:
   version "5.0.0"
@@ -4403,6 +4693,18 @@ hex-color-regex@^1.1.0:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha1-TAb8y0YC/iYCs8k9+C1+fb8aio4=
 
+history@^4.9.0:
+  version "4.9.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/history/-/history-4.9.0.tgz#84587c2068039ead8af769e9d6a6860a14fa1bca"
+  integrity sha1-hFh8IGgDnq2K92np1qaGChT6G8o=
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+    loose-envify "^1.2.0"
+    resolve-pathname "^2.2.0"
+    tiny-invariant "^1.0.2"
+    tiny-warning "^1.0.0"
+    value-equal "^0.4.0"
+
 hmac-drbg@^1.0.0:
   version "1.0.1"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
@@ -4416,6 +4718,13 @@ hoek@4.x.x:
   version "4.2.1"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/hoek/-/hoek-4.2.1.tgz#9634502aa12c445dd5a7c5734b572bb8738aacbb"
   integrity sha1-ljRQKqEsRF3Vp8VzS1cruHOKrLs=
+
+hoist-non-react-statics@^3.1.0:
+  version "3.3.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/hoist-non-react-statics/-/hoist-non-react-statics-3.3.0.tgz#b09178f0122184fb95acf525daaecb4d8f45958b"
+  integrity sha1-sJF48BIhhPuVrPUl2q7LTY9FlYs=
+  dependencies:
+    react-is "^16.7.0"
 
 home-or-tmp@^2.0.0:
   version "2.0.0"
@@ -4460,6 +4769,13 @@ html-comment-regex@^1.1.0:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/html-comment-regex/-/html-comment-regex-1.1.2.tgz#97d4688aeb5c81886a364faa0cad1dda14d433a7"
   integrity sha1-l9RoiutcgYhqNk+qDK0d2hTUM6c=
 
+html-element-map@^1.0.0:
+  version "1.0.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/html-element-map/-/html-element-map-1.0.0.tgz#19a41940225153ecdfead74f8509154ff1cdc18b"
+  integrity sha1-GaQZQCJRU+zf6tdPhQkVT/HNwYs=
+  dependencies:
+    array-filter "^1.0.0"
+
 html-encoding-sniffer@^1.0.2:
   version "1.0.2"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/html-encoding-sniffer/-/html-encoding-sniffer-1.0.2.tgz#e70d84b94da53aa375e11fe3a351be6642ca46f8"
@@ -4498,7 +4814,7 @@ html-webpack-plugin@4.0.0-alpha.2:
     tapable "^1.0.0"
     util.promisify "1.0.0"
 
-htmlparser2@^3.3.0:
+htmlparser2@^3.3.0, htmlparser2@^3.9.1:
   version "3.10.1"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/htmlparser2/-/htmlparser2-3.10.1.tgz#bd679dc3f59897b6a34bb10749c855bb53a9392f"
   integrity sha1-vWedw/WYl7ajS7EHSchVu1OpOS8=
@@ -4570,7 +4886,7 @@ iconv-lite@0.4.23:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
-iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@^0.4.4:
+iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@^0.4.4, iconv-lite@~0.4.13:
   version "0.4.24"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
   integrity sha1-ICK0sl+93CHS9SSXSkdKr+czkIs=
@@ -4831,6 +5147,11 @@ is-binary-path@^1.0.0:
   dependencies:
     binary-extensions "^1.0.0"
 
+is-boolean-object@^1.0.0:
+  version "1.0.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/is-boolean-object/-/is-boolean-object-1.0.0.tgz#98f8b28030684219a95f375cfbd88ce3405dff93"
+  integrity sha1-mPiygDBoQhmpXzdc+9iM40Bd/5M=
+
 is-buffer@^1.0.2, is-buffer@^1.1.5:
   version "1.1.6"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
@@ -4841,7 +5162,7 @@ is-buffer@^2.0.0:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/is-buffer/-/is-buffer-2.0.3.tgz#4ecf3fcf749cbd1e472689e109ac66261a25e725"
   integrity sha1-Ts8/z3ScvR5HJonhCaxmJhol5yU=
 
-is-callable@^1.1.4:
+is-callable@^1.1.3, is-callable@^1.1.4:
   version "1.1.4"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/is-callable/-/is-callable-1.1.4.tgz#1e1adf219e1eeb684d691f9d6a05ff0d30a24d75"
   integrity sha1-HhrfIZ4e62hNaR+dagX/DTCiTXU=
@@ -4852,6 +5173,13 @@ is-ci@^1.0.10:
   integrity sha1-43ecjuF/zPQoSI9uKBGH8uYyhBw=
   dependencies:
     ci-info "^1.5.0"
+
+is-ci@^2.0.0:
+  version "2.0.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/is-ci/-/is-ci-2.0.0.tgz#6bc6334181810e04b5c22b3d589fdca55026404c"
+  integrity sha1-a8YzQYGBDgS1wis9WJ/cpVAmQEw=
+  dependencies:
+    ci-info "^2.0.0"
 
 is-color-stop@^1.0.0:
   version "1.1.0"
@@ -4986,6 +5314,11 @@ is-glob@^4.0.0:
   dependencies:
     is-extglob "^2.1.1"
 
+is-number-object@^1.0.3:
+  version "1.0.3"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/is-number-object/-/is-number-object-1.0.3.tgz#f265ab89a9f445034ef6aff15a8f00b00f551799"
+  integrity sha1-8mWrian0RQNO9q/xWo8AsA9VF5k=
+
 is-number@^2.1.0:
   version "2.1.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/is-number/-/is-number-2.1.0.tgz#01fcbbb393463a548f2f466cce16dece49db908f"
@@ -5078,10 +5411,20 @@ is-root@2.0.0:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/is-root/-/is-root-2.0.0.tgz#838d1e82318144e5a6f77819d90207645acc7019"
   integrity sha1-g40egjGBROWm93gZ2QIHZFrMcBk=
 
-is-stream@^1.1.0:
+is-stream@^1.0.1, is-stream@^1.1.0:
   version "1.1.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
   integrity sha1-EtSj3U5o4Lec6428hBc66A2RykQ=
+
+is-string@^1.0.4:
+  version "1.0.4"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/is-string/-/is-string-1.0.4.tgz#cc3a9b69857d621e963725a24caeec873b826e64"
+  integrity sha1-zDqbaYV9Yh6WNyWiTK7shzuCbmQ=
+
+is-subset@^0.1.1:
+  version "0.1.1"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/is-subset/-/is-subset-0.1.1.tgz#8a59117d932de1de00f245fcdd39ce43f1e939a6"
+  integrity sha1-ilkRfZMt4d4A8kX83TnOQ/HpOaY=
 
 is-svg@^3.0.0:
   version "3.0.0"
@@ -5117,6 +5460,11 @@ is-wsl@^1.1.0:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/is-wsl/-/is-wsl-1.1.0.tgz#1f16e4aa22b04d1336b66188a66af3c600c3a66d"
   integrity sha1-HxbkqiKwTRM2tmGIpmrzxgDDpm0=
 
+isarray@0.0.1:
+  version "0.0.1"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
+  integrity sha1-ihis/Kmo9Bd+Cav8YDiTmwXR7t8=
+
 isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
@@ -5146,6 +5494,14 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
+isomorphic-fetch@^2.1.1:
+  version "2.2.1"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
+  integrity sha1-YRrhrPFPXoH3KVB0coGf6XM1WKk=
+  dependencies:
+    node-fetch "^1.0.1"
+    whatwg-fetch ">=0.10.0"
+
 isstream@~0.1.2:
   version "0.1.2"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
@@ -5173,6 +5529,11 @@ istanbul-lib-coverage@^1.2.0, istanbul-lib-coverage@^1.2.1:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/istanbul-lib-coverage/-/istanbul-lib-coverage-1.2.1.tgz#ccf7edcd0a0bb9b8f729feeb0930470f9af664f0"
   integrity sha1-zPftzQoLubj3Kf7rCTBHD5r2ZPA=
 
+istanbul-lib-coverage@^2.0.3:
+  version "2.0.3"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.3.tgz#0b891e5ad42312c2b9488554f603795f9a2211ba"
+  integrity sha1-C4keWtQjEsK5SIVU9gN5X5oiEbo=
+
 istanbul-lib-hook@^1.2.2:
   version "1.2.2"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/istanbul-lib-hook/-/istanbul-lib-hook-1.2.2.tgz#bc6bf07f12a641fbf1c85391d0daa8f0aea6bf86"
@@ -5192,6 +5553,19 @@ istanbul-lib-instrument@^1.10.1, istanbul-lib-instrument@^1.10.2:
     babylon "^6.18.0"
     istanbul-lib-coverage "^1.2.1"
     semver "^5.3.0"
+
+istanbul-lib-instrument@^3.0.0:
+  version "3.1.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/istanbul-lib-instrument/-/istanbul-lib-instrument-3.1.0.tgz#a2b5484a7d445f1f311e93190813fa56dfb62971"
+  integrity sha1-orVISn1EXx8xHpMZCBP6Vt+2KXE=
+  dependencies:
+    "@babel/generator" "^7.0.0"
+    "@babel/parser" "^7.0.0"
+    "@babel/template" "^7.0.0"
+    "@babel/traverse" "^7.0.0"
+    "@babel/types" "^7.0.0"
+    istanbul-lib-coverage "^2.0.3"
+    semver "^5.5.0"
 
 istanbul-lib-report@^1.1.5:
   version "1.1.5"
@@ -5315,6 +5689,13 @@ jest-each@^23.6.0:
     chalk "^2.0.1"
     pretty-format "^23.6.0"
 
+jest-environment-enzyme@^7.0.2:
+  version "7.0.2"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/jest-environment-enzyme/-/jest-environment-enzyme-7.0.2.tgz#7af83556e9a894d350d0dd4e561eaa33254e1daf"
+  integrity sha1-evg1VumolNNQ0N1OVh6qMyVOHa8=
+  dependencies:
+    jest-environment-jsdom "^24.0.0"
+
 jest-environment-jsdom@^23.4.0:
   version "23.4.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/jest-environment-jsdom/-/jest-environment-jsdom-23.4.0.tgz#056a7952b3fea513ac62a140a2c368c79d9e6023"
@@ -5324,6 +5705,18 @@ jest-environment-jsdom@^23.4.0:
     jest-util "^23.4.0"
     jsdom "^11.5.1"
 
+jest-environment-jsdom@^24.0.0:
+  version "24.5.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/jest-environment-jsdom/-/jest-environment-jsdom-24.5.0.tgz#1c3143063e1374100f8c2723a8b6aad23b6db7eb"
+  integrity sha1-HDFDBj4TdBAPjCcjqLaq0jttt+s=
+  dependencies:
+    "@jest/environment" "^24.5.0"
+    "@jest/fake-timers" "^24.5.0"
+    "@jest/types" "^24.5.0"
+    jest-mock "^24.5.0"
+    jest-util "^24.5.0"
+    jsdom "^11.5.1"
+
 jest-environment-node@^23.4.0:
   version "23.4.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/jest-environment-node/-/jest-environment-node-23.4.0.tgz#57e80ed0841dea303167cce8cd79521debafde10"
@@ -5331,6 +5724,15 @@ jest-environment-node@^23.4.0:
   dependencies:
     jest-mock "^23.2.0"
     jest-util "^23.4.0"
+
+jest-enzyme@^7.0.2:
+  version "7.0.2"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/jest-enzyme/-/jest-enzyme-7.0.2.tgz#706af4d713846d5cb78c24830cf3deed9bb029a1"
+  integrity sha1-cGr01xOEbVy3jCSDDPPe7ZuwKaE=
+  dependencies:
+    enzyme-matchers "^7.0.2"
+    enzyme-to-json "^3.3.0"
+    jest-environment-enzyme "^7.0.2"
 
 jest-get-type@^22.1.0:
   version "22.4.3"
@@ -5350,6 +5752,21 @@ jest-haste-map@^23.6.0:
     jest-worker "^23.2.0"
     micromatch "^2.3.11"
     sane "^2.0.0"
+
+jest-haste-map@^24.5.0:
+  version "24.5.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/jest-haste-map/-/jest-haste-map-24.5.0.tgz#3f17d0c548b99c0c96ed2893f9c0ccecb2eb9066"
+  integrity sha1-PxfQxUi5nAyW7SiT+cDM7LLrkGY=
+  dependencies:
+    "@jest/types" "^24.5.0"
+    fb-watchman "^2.0.0"
+    graceful-fs "^4.1.15"
+    invariant "^2.2.4"
+    jest-serializer "^24.4.0"
+    jest-util "^24.5.0"
+    jest-worker "^24.4.0"
+    micromatch "^3.1.10"
+    sane "^4.0.3"
 
 jest-jasmine2@^23.6.0:
   version "23.6.0"
@@ -5396,10 +5813,31 @@ jest-message-util@^23.4.0:
     slash "^1.0.0"
     stack-utils "^1.0.1"
 
+jest-message-util@^24.5.0:
+  version "24.5.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/jest-message-util/-/jest-message-util-24.5.0.tgz#181420a65a7ef2e8b5c2f8e14882c453c6d41d07"
+  integrity sha1-GBQgplp+8ui1wvjhSILEU8bUHQc=
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    "@jest/test-result" "^24.5.0"
+    "@jest/types" "^24.5.0"
+    "@types/stack-utils" "^1.0.1"
+    chalk "^2.0.1"
+    micromatch "^3.1.10"
+    slash "^2.0.0"
+    stack-utils "^1.0.1"
+
 jest-mock@^23.2.0:
   version "23.2.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/jest-mock/-/jest-mock-23.2.0.tgz#ad1c60f29e8719d47c26e1138098b6d18b261134"
   integrity sha1-rRxg8p6HGdR8JuETgJi20YsmETQ=
+
+jest-mock@^24.5.0:
+  version "24.5.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/jest-mock/-/jest-mock-24.5.0.tgz#976912c99a93f2a1c67497a9414aa4d9da4c7b76"
+  integrity sha1-l2kSyZqT8qHGdJepQUqk2dpMe3Y=
+  dependencies:
+    "@jest/types" "^24.5.0"
 
 jest-pnp-resolver@1.0.2:
   version "1.0.2"
@@ -5410,6 +5848,11 @@ jest-regex-util@^23.3.0:
   version "23.3.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/jest-regex-util/-/jest-regex-util-23.3.0.tgz#5f86729547c2785c4002ceaa8f849fe8ca471bc5"
   integrity sha1-X4ZylUfCeFxAAs6qj4Sf6MpHG8U=
+
+jest-regex-util@^24.3.0:
+  version "24.3.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/jest-regex-util/-/jest-regex-util-24.3.0.tgz#d5a65f60be1ae3e310d5214a0307581995227b36"
+  integrity sha1-1aZfYL4a4+MQ1SFKAwdYGZUiezY=
 
 jest-resolve-dependencies@^23.6.0:
   version "23.6.0"
@@ -5479,6 +5922,11 @@ jest-serializer@^23.0.1:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/jest-serializer/-/jest-serializer-23.0.1.tgz#a3776aeb311e90fe83fab9e533e85102bd164165"
   integrity sha1-o3dq6zEekP6D+rnlM+hRAr0WQWU=
 
+jest-serializer@^24.4.0:
+  version "24.4.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/jest-serializer/-/jest-serializer-24.4.0.tgz#f70c5918c8ea9235ccb1276d232e459080588db3"
+  integrity sha1-9wxZGMjqkjXMsSdtIy5FkIBYjbM=
+
 jest-snapshot@^23.6.0:
   version "23.6.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/jest-snapshot/-/jest-snapshot-23.6.0.tgz#f9c2625d1b18acda01ec2d2b826c0ce58a5aa17a"
@@ -5507,6 +5955,25 @@ jest-util@^23.4.0:
     jest-message-util "^23.4.0"
     mkdirp "^0.5.1"
     slash "^1.0.0"
+    source-map "^0.6.0"
+
+jest-util@^24.5.0:
+  version "24.5.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/jest-util/-/jest-util-24.5.0.tgz#9d9cb06d9dcccc8e7cc76df91b1635025d7baa84"
+  integrity sha1-nZywbZ3MzI58x235GxY1Al17qoQ=
+  dependencies:
+    "@jest/console" "^24.3.0"
+    "@jest/fake-timers" "^24.5.0"
+    "@jest/source-map" "^24.3.0"
+    "@jest/test-result" "^24.5.0"
+    "@jest/types" "^24.5.0"
+    "@types/node" "*"
+    callsites "^3.0.0"
+    chalk "^2.0.1"
+    graceful-fs "^4.1.15"
+    is-ci "^2.0.0"
+    mkdirp "^0.5.1"
+    slash "^2.0.0"
     source-map "^0.6.0"
 
 jest-validate@^23.6.0:
@@ -5546,6 +6013,15 @@ jest-worker@^23.2.0:
   integrity sha1-+vcGqNo2+uYOsmlXJX+ntdjqArk=
   dependencies:
     merge-stream "^1.0.1"
+
+jest-worker@^24.4.0:
+  version "24.4.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/jest-worker/-/jest-worker-24.4.0.tgz#fbc452b0120bb5c2a70cdc88fa132b48eeb11dd0"
+  integrity sha1-+8RSsBILtcKnDNyI+hMrSO6xHdA=
+  dependencies:
+    "@types/node" "*"
+    merge-stream "^1.0.1"
+    supports-color "^6.1.0"
 
 jest@23.6.0:
   version "23.6.0"
@@ -5836,6 +6312,16 @@ load-json-file@^2.0.0:
     pify "^2.0.0"
     strip-bom "^3.0.0"
 
+load-json-file@^4.0.0:
+  version "4.0.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/load-json-file/-/load-json-file-4.0.0.tgz#2f5f45ab91e33216234fd53adab668eb4ec0993b"
+  integrity sha1-L19Fq5HjMhYjT9U62rZo607AmTs=
+  dependencies:
+    graceful-fs "^4.1.2"
+    parse-json "^4.0.0"
+    pify "^3.0.0"
+    strip-bom "^3.0.0"
+
 loader-fs-cache@^1.0.0:
   version "1.0.1"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/loader-fs-cache/-/loader-fs-cache-1.0.1.tgz#56e0bf08bd9708b26a765b68509840c8dec9fdbc"
@@ -5874,6 +6360,25 @@ locate-path@^3.0.0:
     p-locate "^3.0.0"
     path-exists "^3.0.0"
 
+lodash._baseisequal@^3.0.0:
+  version "3.0.7"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/lodash._baseisequal/-/lodash._baseisequal-3.0.7.tgz#d8025f76339d29342767dcc887ce5cb95a5b51f1"
+  integrity sha1-2AJfdjOdKTQnZ9zIh85cuVpbUfE=
+  dependencies:
+    lodash.isarray "^3.0.0"
+    lodash.istypedarray "^3.0.0"
+    lodash.keys "^3.0.0"
+
+lodash._bindcallback@^3.0.0:
+  version "3.0.1"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/lodash._bindcallback/-/lodash._bindcallback-3.0.1.tgz#e531c27644cf8b57a99e17ed95b35c748789392e"
+  integrity sha1-5THCdkTPi1epnhftlbNcdIeJOS4=
+
+lodash._getnative@^3.0.0:
+  version "3.9.1"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/lodash._getnative/-/lodash._getnative-3.9.1.tgz#570bc7dede46d61cdcde687d65d3eecbaa3aaff5"
+  integrity sha1-VwvH3t5G1hzc3mh9ZdPuy6o6r/U=
+
 lodash._reinterpolate@~3.0.0:
   version "3.0.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
@@ -5884,10 +6389,57 @@ lodash.camelcase@^4.3.0:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
   integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
 
+lodash.escape@^4.0.1:
+  version "4.0.1"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/lodash.escape/-/lodash.escape-4.0.1.tgz#c9044690c21e04294beaa517712fded1fa88de98"
+  integrity sha1-yQRGkMIeBClL6qUXcS/e0fqI3pg=
+
+lodash.flattendeep@^4.4.0:
+  version "4.4.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/lodash.flattendeep/-/lodash.flattendeep-4.4.0.tgz#fb030917f86a3134e5bc9bec0d69e0013ddfedb2"
+  integrity sha1-+wMJF/hqMTTlvJvsDWngAT3f7bI=
+
 lodash.get@^4.4.2:
   version "4.4.2"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
   integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
+
+lodash.isarguments@^3.0.0:
+  version "3.1.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
+  integrity sha1-L1c9hcaiQon/AGY7SRwdM4/zRYo=
+
+lodash.isarray@^3.0.0:
+  version "3.0.4"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/lodash.isarray/-/lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55"
+  integrity sha1-eeTriMNqgSKvhvhEqpvNhRtfu1U=
+
+lodash.isequal@^3.0:
+  version "3.0.4"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/lodash.isequal/-/lodash.isequal-3.0.4.tgz#1c35eb3b6ef0cd1ff51743e3ea3cf7fdffdacb64"
+  integrity sha1-HDXrO27wzR/1F0Pj6jz3/f/ay2Q=
+  dependencies:
+    lodash._baseisequal "^3.0.0"
+    lodash._bindcallback "^3.0.0"
+
+lodash.isequal@^4.5.0:
+  version "4.5.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+  integrity sha1-QVxEePK8wwEgwizhDtMib30+GOA=
+
+lodash.istypedarray@^3.0.0:
+  version "3.0.6"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/lodash.istypedarray/-/lodash.istypedarray-3.0.6.tgz#c9a477498607501d8e8494d283b87c39281cef62"
+  integrity sha1-yaR3SYYHUB2OhJTSg7h8OSgc72I=
+
+lodash.keys@^3.0.0:
+  version "3.1.2"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/lodash.keys/-/lodash.keys-3.1.2.tgz#4dbc0472b156be50a0b286855d1bd0b0c656098a"
+  integrity sha1-TbwEcrFWvlCgsoaFXRvQsMZWCYo=
+  dependencies:
+    lodash._getnative "^3.0.0"
+    lodash.isarguments "^3.0.0"
+    lodash.isarray "^3.0.0"
 
 lodash.memoize@^4.1.2:
   version "4.1.2"
@@ -5924,7 +6476,7 @@ lodash.uniq@^4.5.0:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-"lodash@>=3.5 <5", lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5:
+"lodash@>=3.5 <5", lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5:
   version "4.17.11"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha1-s56mIp72B+zYniyN8SU2iRysm40=
@@ -5934,7 +6486,7 @@ loglevel@^1.4.1:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/loglevel/-/loglevel-1.6.1.tgz#e0fc95133b6ef276cdc8887cdaf24aa6f156f8fa"
   integrity sha1-4PyVEztu8nbNyIh82vJKpvFW+Po=
 
-loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
+loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.2.0, loose-envify@^1.3.1, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=
@@ -6252,6 +6804,11 @@ mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@
   dependencies:
     minimist "0.0.8"
 
+moo@^0.4.3:
+  version "0.4.3"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/moo/-/moo-0.4.3.tgz#3f847a26f31cf625a956a87f2b10fbc013bfd10e"
+  integrity sha1-P4R6JvMc9iWpVqh/KxD7wBO/0Q4=
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -6319,6 +6876,17 @@ natural-compare@^1.4.0:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
+nearley@^2.7.10:
+  version "2.16.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/nearley/-/nearley-2.16.0.tgz#77c297d041941d268290ec84b739d0ee297e83a7"
+  integrity sha1-d8KX0EGUHSaCkOyEtznQ7il+g6c=
+  dependencies:
+    commander "^2.19.0"
+    moo "^0.4.3"
+    railroad-diagrams "^1.0.0"
+    randexp "0.4.6"
+    semver "^5.4.1"
+
 needle@^2.2.1:
   version "2.2.4"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/needle/-/needle-2.2.4.tgz#51931bff82533b1928b7d1d69e01f1b00ffd2a4e"
@@ -6349,6 +6917,14 @@ no-case@^2.2.0:
   integrity sha1-YLgTOWvjmz8SiKTB7V0efSi0ZKw=
   dependencies:
     lower-case "^1.1.1"
+
+node-fetch@^1.0.1:
+  version "1.7.3"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/node-fetch/-/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
+  integrity sha1-mA9vcthSEaU0fGsrwYxbhMPrR+8=
+  dependencies:
+    encoding "^0.1.11"
+    is-stream "^1.0.1"
 
 node-forge@0.7.5:
   version "0.7.5"
@@ -6539,6 +7115,16 @@ object-hash@^1.1.4:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/object-hash/-/object-hash-1.3.1.tgz#fde452098a951cb145f039bb7d455449ddc126df"
   integrity sha1-/eRSCYqVHLFF8Dm7fUVUSd3BJt8=
 
+object-inspect@^1.6.0:
+  version "1.6.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/object-inspect/-/object-inspect-1.6.0.tgz#c70b6cbf72f274aab4c34c0c82f5167bf82cf15b"
+  integrity sha1-xwtsv3LydKq0w0wMgvUWe/gs8Vs=
+
+object-is@^1.0.1:
+  version "1.0.1"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/object-is/-/object-is-1.0.1.tgz#0aa60ec9989a0b3ed795cf4d06f62cf1ad6539b6"
+  integrity sha1-CqYOyZiaCz7Xlc9NBvYs8a1lObY=
+
 object-keys@^1.0.11, object-keys@^1.0.12:
   version "1.1.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/object-keys/-/object-keys-1.1.0.tgz#11bd22348dd2e096a045ab06f6c85bcc340fa032"
@@ -6560,6 +7146,16 @@ object.assign@^4.1.0:
     function-bind "^1.1.1"
     has-symbols "^1.0.0"
     object-keys "^1.0.11"
+
+object.entries@^1.0.4:
+  version "1.1.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/object.entries/-/object.entries-1.1.0.tgz#2024fc6d6ba246aee38bdb0ffd5cfbcf371b7519"
+  integrity sha1-ICT8bWuiRq7ji9sP/Vz7zzcbdRk=
+  dependencies:
+    define-properties "^1.1.3"
+    es-abstract "^1.12.0"
+    function-bind "^1.1.1"
+    has "^1.0.3"
 
 object.fromentries@^2.0.0:
   version "2.0.0"
@@ -6594,7 +7190,7 @@ object.pick@^1.3.0:
   dependencies:
     isobject "^3.0.1"
 
-object.values@^1.1.0:
+object.values@^1.0.4, object.values@^1.1.0:
   version "1.1.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/object.values/-/object.values-1.1.0.tgz#bf6810ef5da3e5325790eaaa2be213ea84624da9"
   integrity sha1-v2gQ712j5TJXkOqqK+IT6oRiTak=
@@ -6853,6 +7449,13 @@ parse5@4.0.0:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/parse5/-/parse5-4.0.0.tgz#6d78656e3da8d78b4ec0b906f7c08ef1dfe3f608"
   integrity sha1-bXhlbj2o14tOwLkG98CO8d/j9gg=
 
+parse5@^3.0.1:
+  version "3.0.3"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/parse5/-/parse5-3.0.3.tgz#042f792ffdd36851551cf4e9e066b3874ab45b5c"
+  integrity sha1-BC95L/3TaFFVHPTp4Gazh0q0W1w=
+  dependencies:
+    "@types/node" "*"
+
 parse5@^5.0.0:
   version "5.1.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/parse5/-/parse5-5.1.0.tgz#c59341c9723f414c452975564c7c00a68d58acd2"
@@ -6914,6 +7517,13 @@ path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
+
+path-to-regexp@^1.7.0:
+  version "1.7.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/path-to-regexp/-/path-to-regexp-1.7.0.tgz#59fde0f435badacba103a84e9d3bc64e96b9937d"
+  integrity sha1-Wf3g9DW62suhA6hOnTvGTpa5k30=
+  dependencies:
+    isarray "0.0.1"
 
 path-type@^1.0.0:
   version "1.1.0"
@@ -7731,6 +8341,13 @@ promise@8.0.2:
   dependencies:
     asap "~2.0.6"
 
+promise@^7.1.1:
+  version "7.3.1"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/promise/-/promise-7.3.1.tgz#064b72602b18f90f29192b8b1bc418ffd1ebd3bf"
+  integrity sha1-BktyYCsY+Q8pGSuLG8QY/9Hr078=
+  dependencies:
+    asap "~2.0.3"
+
 prompts@^0.1.9:
   version "0.1.14"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/prompts/-/prompts-0.1.14.tgz#a8e15c612c5c9ec8f8111847df3337c9cbd443b2"
@@ -7739,7 +8356,7 @@ prompts@^0.1.9:
     kleur "^2.0.1"
     sisteransi "^0.1.1"
 
-prop-types@^15.6.2:
+prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
@@ -7855,12 +8472,25 @@ querystringify@^2.0.0:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/querystringify/-/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
   integrity sha1-YOWl/WSn+L+k0qsu1v30yFutFU4=
 
-raf@3.4.1:
+raf@3.4.1, raf@^3.4.0:
   version "3.4.1"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/raf/-/raf-3.4.1.tgz#0742e99a4a6552f445d73e3ee0328af0ff1ede39"
   integrity sha1-B0LpmkplUvRF1z4+4DKK8P8e3jk=
   dependencies:
     performance-now "^2.1.0"
+
+railroad-diagrams@^1.0.0:
+  version "1.0.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/railroad-diagrams/-/railroad-diagrams-1.0.0.tgz#eb7e6267548ddedfb899c1b90e57374559cddb7e"
+  integrity sha1-635iZ1SN3t+4mcG5Dlc3RVnN234=
+
+randexp@0.4.6:
+  version "0.4.6"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/randexp/-/randexp-0.4.6.tgz#e986ad5e5e31dae13ddd6f7b3019aa7c87f60ca3"
+  integrity sha1-6YatXl4x2uE93W97MBmqfIf2DKM=
+  dependencies:
+    discontinuous-range "1.0.0"
+    ret "~0.1.10"
 
 randomatic@^3.0.0:
   version "3.1.1"
@@ -7953,7 +8583,7 @@ react-dev-utils@^8.0.0:
     strip-ansi "5.0.0"
     text-table "0.2.0"
 
-react-dom@16.8.5:
+react-dom@^16.8.5:
   version "16.8.5"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/react-dom/-/react-dom-16.8.5.tgz#b3e37d152b49e07faaa8de41fdf562be3463335e"
   integrity sha1-s+N9FStJ4H+qqN5B/fVivjRjM14=
@@ -7968,10 +8598,39 @@ react-error-overlay@^5.1.4:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/react-error-overlay/-/react-error-overlay-5.1.4.tgz#88dfb88857c18ceb3b9f95076f850d7121776991"
   integrity sha1-iN+4iFfBjOs7n5UHb4UNcSF3aZE=
 
-react-is@^16.8.1:
+react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.5:
   version "16.8.5"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/react-is/-/react-is-16.8.5.tgz#c54ac229dd66b5afe0de5acbe47647c3da692ff8"
   integrity sha1-xUrCKd1mta/g3lrL5HZHw9ppL/g=
+
+react-router-dom@^5.0.0:
+  version "5.0.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/react-router-dom/-/react-router-dom-5.0.0.tgz#542a9b86af269a37f0b87218c4c25ea8dcf0c073"
+  integrity sha1-VCqbhq8mmjfwuHIYxMJeqNzwwHM=
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+    history "^4.9.0"
+    loose-envify "^1.3.1"
+    prop-types "^15.6.2"
+    react-router "5.0.0"
+    tiny-invariant "^1.0.2"
+    tiny-warning "^1.0.0"
+
+react-router@5.0.0:
+  version "5.0.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/react-router/-/react-router-5.0.0.tgz#349863f769ffc2fa10ee7331a4296e86bc12879d"
+  integrity sha1-NJhj92n/wvoQ7nMxpCluhrwSh50=
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+    create-react-context "^0.2.2"
+    history "^4.9.0"
+    hoist-non-react-statics "^3.1.0"
+    loose-envify "^1.3.1"
+    path-to-regexp "^1.7.0"
+    prop-types "^15.6.2"
+    react-is "^16.6.0"
+    tiny-invariant "^1.0.2"
+    tiny-warning "^1.0.0"
 
 react-scripts@2.1.8:
   version "2.1.8"
@@ -8027,7 +8686,17 @@ react-scripts@2.1.8:
   optionalDependencies:
     fsevents "1.2.4"
 
-react@16.8.5:
+react-test-renderer@^16.0.0-0:
+  version "16.8.5"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/react-test-renderer/-/react-test-renderer-16.8.5.tgz#4cba7a8aad73f7e8a0bc4379a0fe21632886a563"
+  integrity sha1-TLp6iq1z9+igvEN5oP4hYyiGpWM=
+  dependencies:
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    react-is "^16.8.5"
+    scheduler "^0.13.5"
+
+react@^16.8.5:
   version "16.8.5"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/react/-/react-16.8.5.tgz#49be3b655489d74504ad994016407e8a0445de66"
   integrity sha1-Sb47ZVSJ10UErZlAFkB+igRF3mY=
@@ -8053,6 +8722,14 @@ read-pkg-up@^2.0.0:
     find-up "^2.0.0"
     read-pkg "^2.0.0"
 
+read-pkg-up@^4.0.0:
+  version "4.0.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/read-pkg-up/-/read-pkg-up-4.0.0.tgz#1b221c6088ba7799601c808f91161c66e58f8978"
+  integrity sha1-GyIcYIi6d5lgHICPkRYcZuWPiXg=
+  dependencies:
+    find-up "^3.0.0"
+    read-pkg "^3.0.0"
+
 read-pkg@^1.0.0:
   version "1.1.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/read-pkg/-/read-pkg-1.1.0.tgz#f5ffaa5ecd29cb31c0474bca7d756b6bb29e3f28"
@@ -8070,6 +8747,15 @@ read-pkg@^2.0.0:
     load-json-file "^2.0.0"
     normalize-package-data "^2.3.2"
     path-type "^2.0.0"
+
+read-pkg@^3.0.0:
+  version "3.0.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/read-pkg/-/read-pkg-3.0.0.tgz#9cbc686978fee65d16c00e2b19c237fcf6e38389"
+  integrity sha1-nLxoaXj+5l0WwA4rGcI3/Pbjg4k=
+  dependencies:
+    load-json-file "^4.0.0"
+    normalize-package-data "^2.3.2"
+    path-type "^3.0.0"
 
 "readable-stream@1 || 2", readable-stream@^2.0.0, readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.6, readable-stream@^2.1.5, readable-stream@^2.2.2, readable-stream@^2.3.3, readable-stream@^2.3.6, readable-stream@~2.3.6:
   version "2.3.6"
@@ -8102,7 +8788,7 @@ readdirp@^2.2.1:
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
 
-realpath-native@^1.0.0:
+realpath-native@^1.0.0, realpath-native@^1.1.0:
   version "1.1.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/realpath-native/-/realpath-native-1.1.0.tgz#2003294fea23fb0672f2476ebe22fcf498a2d65c"
   integrity sha1-IAMpT+oj+wZy8kduviL89Jii1lw=
@@ -8137,6 +8823,11 @@ regenerator-runtime@^0.12.0:
   version "0.12.1"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
   integrity sha1-+hpxVEdkwDb4xJsToIsllMn4oN4=
+
+regenerator-runtime@^0.13.2:
+  version "0.13.2"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/regenerator-runtime/-/regenerator-runtime-0.13.2.tgz#32e59c9a6fb9b1a4aff09b4930ca2d4477343447"
+  integrity sha1-MuWcmm+5saSv8JtJMMotRHc0NEc=
 
 regenerator-transform@^0.13.4:
   version "0.13.4"
@@ -8346,6 +9037,11 @@ resolve-from@^4.0.0:
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/resolve-from/-/resolve-from-4.0.0.tgz#4abcd852ad32dd7baabfe9b40e00a36db5f392e6"
   integrity sha1-SrzYUq0y3Xuqv+m0DgCjbbXzkuY=
 
+resolve-pathname@^2.2.0:
+  version "2.2.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/resolve-pathname/-/resolve-pathname-2.2.0.tgz#7e9ae21ed815fd63ab189adeee64dc831eefa879"
+  integrity sha1-fpriHtgV/WOrGJre7mTcgx7vqHk=
+
 resolve-url@^0.2.1:
   version "0.2.1"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/resolve-url/-/resolve-url-0.2.1.tgz#2c637fe77c893afd2a663fe21aa9080068e2052a"
@@ -8401,10 +9097,23 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
+rst-selector-parser@^2.2.3:
+  version "2.2.3"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/rst-selector-parser/-/rst-selector-parser-2.2.3.tgz#81b230ea2fcc6066c89e3472de794285d9b03d91"
+  integrity sha1-gbIw6i/MYGbInjRy3nlChdmwPZE=
+  dependencies:
+    lodash.flattendeep "^4.4.0"
+    nearley "^2.7.10"
+
 rsvp@^3.3.3:
   version "3.6.2"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/rsvp/-/rsvp-3.6.2.tgz#2e96491599a96cde1b515d5674a8f7a91452926a"
   integrity sha1-LpZJFZmpbN4bUV1WdKj3qRRSkmo=
+
+rsvp@^4.8.4:
+  version "4.8.4"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/rsvp/-/rsvp-4.8.4.tgz#b50e6b34583f3dd89329a2f23a8a2be072845911"
+  integrity sha1-tQ5rNFg/PdiTKaLyOoor4HKEWRE=
 
 run-async@^2.2.0:
   version "2.3.0"
@@ -8459,6 +9168,21 @@ sane@^2.0.0:
     watch "~0.18.0"
   optionalDependencies:
     fsevents "^1.2.3"
+
+sane@^4.0.3:
+  version "4.1.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/sane/-/sane-4.1.0.tgz#ed881fd922733a6c461bc189dc2b6c006f3ffded"
+  integrity sha1-7Ygf2SJzOmxGG8GJ3CtsAG8//e0=
+  dependencies:
+    "@cnakazawa/watch" "^1.0.3"
+    anymatch "^2.0.0"
+    capture-exit "^2.0.0"
+    exec-sh "^0.3.2"
+    execa "^1.0.0"
+    fb-watchman "^2.0.0"
+    micromatch "^3.1.4"
+    minimist "^1.1.1"
+    walker "~1.0.5"
 
 sass-loader@7.1.0:
   version "7.1.0"
@@ -8591,7 +9315,7 @@ set-value@^2.0.0:
     is-plain-object "^2.0.3"
     split-string "^3.0.1"
 
-setimmediate@^1.0.4:
+setimmediate@^1.0.4, setimmediate@^1.0.5:
   version "1.0.5"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
   integrity sha1-KQy7Iy4waULX1+qbg3Mqt4VvgoU=
@@ -8976,6 +9700,15 @@ string-width@^3.0.0:
     is-fullwidth-code-point "^2.0.0"
     strip-ansi "^5.1.0"
 
+string.prototype.trim@^1.1.2:
+  version "1.1.2"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/string.prototype.trim/-/string.prototype.trim-1.1.2.tgz#d04de2c89e137f4d7d206f086b5ed2fae6be8cea"
+  integrity sha1-0E3iyJ4Tf019IG8Ia17S+ua+jOo=
+  dependencies:
+    define-properties "^1.1.2"
+    es-abstract "^1.5.0"
+    function-bind "^1.0.2"
+
 string_decoder@^1.0.0, string_decoder@^1.1.1:
   version "1.2.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/string_decoder/-/string_decoder-1.2.0.tgz#fe86e738b19544afe70469243b2a1ee9240eae8d"
@@ -9201,6 +9934,16 @@ test-exclude@^4.2.1:
     read-pkg-up "^1.0.1"
     require-main-filename "^1.0.1"
 
+test-exclude@^5.0.0:
+  version "5.1.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/test-exclude/-/test-exclude-5.1.0.tgz#6ba6b25179d2d38724824661323b73e03c0c1de1"
+  integrity sha1-a6ayUXnS04ckgkZhMjtz4DwMHeE=
+  dependencies:
+    arrify "^1.0.1"
+    minimatch "^3.0.4"
+    read-pkg-up "^4.0.0"
+    require-main-filename "^1.0.1"
+
 text-table@0.2.0, text-table@^0.2.0:
   version "0.2.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
@@ -9240,6 +9983,16 @@ timsort@^0.3.0:
   version "0.3.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
+
+tiny-invariant@^1.0.2:
+  version "1.0.3"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/tiny-invariant/-/tiny-invariant-1.0.3.tgz#91efaaa0269ccb6271f0296aeedb05fc3e067b7a"
+  integrity sha1-ke+qoCacy2Jx8Clq7tsF/D4Ge3o=
+
+tiny-warning@^1.0.0:
+  version "1.0.2"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/tiny-warning/-/tiny-warning-1.0.2.tgz#1dfae771ee1a04396bdfde27a3adcebc6b648b28"
+  integrity sha1-Hfrnce4aBDlr394no63OvGtkiyg=
 
 tmp@^0.0.33:
   version "0.0.33"
@@ -9389,6 +10142,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+ua-parser-js@^0.7.18:
+  version "0.7.19"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/ua-parser-js/-/ua-parser-js-0.7.19.tgz#94151be4c0a7fb1d001af7022fdaca4642659e4b"
+  integrity sha1-lBUb5MCn+x0AGvcCL9rKRkJlnks=
 
 uglify-js@3.4.x:
   version "3.4.10"
@@ -9607,6 +10365,11 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
+value-equal@^0.4.0:
+  version "0.4.0"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/value-equal/-/value-equal-0.4.0.tgz#c5bdd2f54ee093c04839d71ce2e4758a6890abc7"
+  integrity sha1-xb3S9U7gk8BIOdcc4uR1imiQq8c=
+
 vary@~1.1.2:
   version "1.1.2"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
@@ -9819,7 +10582,7 @@ whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.3:
   dependencies:
     iconv-lite "0.4.24"
 
-whatwg-fetch@3.0.0:
+whatwg-fetch@3.0.0, whatwg-fetch@>=0.10.0:
   version "3.0.0"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
   integrity sha1-/IBORYzEYACbGiuWa8iBfSV4rvs=
@@ -10022,6 +10785,15 @@ wrappy@1:
   version "1.0.2"
   resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
+
+write-file-atomic@2.4.1:
+  version "2.4.1"
+  resolved "https://artifactory.gamesys.co.uk:443/artifactory/api/npm/gamesys-unicorn-npm-virtual/write-file-atomic/-/write-file-atomic-2.4.1.tgz#d0b05463c188ae804396fd5ab2a370062af87529"
+  integrity sha1-0LBUY8GIroBDlv1asqNwBir4dSk=
+  dependencies:
+    graceful-fs "^4.1.11"
+    imurmurhash "^0.1.4"
+    signal-exit "^3.0.2"
 
 write-file-atomic@^2.1.0:
   version "2.4.2"
