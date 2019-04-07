@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 const Header = ({ children }) => (
 	<header className="App-header">
 		<h1 className="header">Alex Borgese</h1>
-		{ children }
+		<h2 className="sub-header">Front End Developer</h2>
+		{children}
 	</header>
 );
 
