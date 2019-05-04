@@ -14,10 +14,14 @@ class App extends Component {
 				<Router>
 					<SideBar>
 						<li>
-							<Link to="/">Home</Link>
+							<Link className="link" to="/">
+								Home
+							</Link>
 						</li>
 						<li>
-							<Link to="/about">About</Link>
+							<Link className="link" to="/about">
+								About
+							</Link>
 						</li>
 					</SideBar>
 					<Route exact path="/" component={Home} />

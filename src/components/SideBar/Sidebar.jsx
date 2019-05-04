@@ -1,11 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SideBar = ({ children }) => (
-	<div className="sidebar">
-		{ children }
-	</div>
-);
+const SideBar = ({ children }) => <ul className="sidebar">{children}</ul>;
 
 SideBar.propTypes = {
 	children: PropTypes.node

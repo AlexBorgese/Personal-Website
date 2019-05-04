@@ -15,6 +15,11 @@ img {
 	text-align: center;
 }
 
+.home-header {
+	border-bottom: 2px solid black;
+	height: 8%;
+}
+
 .App-logo {
 	animation: App-logo-spin infinite 20s linear;
 	height: 50%;
@@ -24,14 +29,22 @@ img {
 .linkedin {
 	padding: 8px;
 	height: 100%;
+	width: 100%;
 }
 
 .github {
 	height: 100%;
+	width: 100%;
 }
 
 .download {
 	height: 100%;
+	width: 100%;
+}
+
+.link {
+	font-weight: bold;
+	color: #282c33;
 }
 
 .App-header {
@@ -44,6 +57,7 @@ img {
 	justify-content: center;
 	font-size: calc(10px + 2vmin);
 	color: white;
+	padding-bottom: 20px;
 }
 
 .header {
@@ -78,18 +92,42 @@ li {
 	padding: 8px;
 	align-items: center;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 }
 
 .sub-header {
 	margin: 0;
 }
 
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+	border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+	border: none;
+}
+
+li a {
+	text-decoration: none;
+	color: #000;
+
+	-webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-o-transition: font-size 0.3s ease, background-color 0.3s ease;
+	-ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+	transition: font-size 0.3s ease, background-color 0.3s ease;
+	display: block;
+	width: 100%;
+}
+
+li a:hover {
+	font-size: 30px;
+	background: #f6f6f6;
 }

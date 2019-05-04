@@ -9,6 +9,7 @@ import DownloadLink from '../components/DownloadLink';
 
 const Home = () => (
 	<div className="main">
+		<h1 className="home-header"> Click the images to find out more:</h1>
 		<div className="external-logos">
 			<ExternalLink
 				className="linkedin"
